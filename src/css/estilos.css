@@ -1,0 +1,222 @@
+html {
+  color: white;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  max-width: 1120px;
+  background: linear-gradient(150deg, rgb(0, 0, 0), rgb(105, 105, 105));
+  background-size: 120%, 120%;
+}
+
+.cabecalho {
+  background-color: #27232ab5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.cabecalho .logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 35%;
+  border: 3px solid white;
+  text-align: center;
+  line-height: 57px;
+  font-family: "Raleway", sans-serif;
+  transition: 0.5s;
+}
+
+.cabecalho a:hover .logo {
+  line-height: 50px;
+  border-radius: 55%;
+  color: #480078;
+  border: 6px dotted rgb(72, 0, 120);
+}
+
+.cabecalho .menu li a {
+  border: 3px solid white;
+  text-align: center;
+  border-radius: 35px;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 5px;
+}
+
+.cabecalho .menu li a:hover {
+  background-color: rgb(72, 0, 120);
+  border-radius: 50px;
+  border: 6px double;
+  transition: 0.5s;
+}
+
+.home {
+  display: flex;
+  min-height: calc(100vh - 125px);
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.home .informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  letter-spacing: 2px;
+  padding: 0 15px;
+  max-width: 50%;
+}
+
+.home .informacoes h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.home .informacoes p {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home .redes-sociais {
+  display: flex;
+  gap: 20px;
+}
+
+.home .redes-sociais a i {
+  border: 2px solid white;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  font-size: 26px;
+  transition: 0.5s;
+}
+
+.home .redes-sociais .linkedin:hover {
+  background-color: blue;
+  transform: scale(1.1);
+  border: 3px solid rgb(64, 1, 106);
+}
+
+.home .redes-sociais .whatsapp:hover {
+  background-color: green;
+  transform: scale(1.1);
+  border: 3px solid rgb(64, 1, 106);
+}
+
+.home .redes-sociais .github:hover {
+  background-color: black;
+  transform: scale(1.1);
+  border: 3px solid rgb(64, 1, 106);
+}
+
+.home .redes-sociais .instagram:hover {
+  background: linear-gradient(150deg, rgb(136, 1, 138), red, yellow);
+  transform: scale(1.1);
+  border: 3px solid rgb(64, 1, 106);
+}
+
+.home .container-foto .foto {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.home .container-foto img {
+  width: 100%;
+  border-radius: 55%;
+  border: solid white;
+}
+
+.projetos {
+  padding: 70px 0 70px;
+}
+
+.projetos .titulo {
+  text-align: center;
+  padding: 60px 0;
+  font-size: 45px;
+  font-weight: 500px;
+  text-transform: uppercase;
+}
+
+.projetos .container-projetos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.projetos .projeto {
+  max-width: 260px;
+  max-height: 500px;
+  position: relative;
+  display: none;
+}
+
+.projetos .projeto.ativo {
+  display: block;
+}
+
+.projetos .projeto img {
+  height: 100%;
+}
+
+.projetos .projeto h3 {
+  background-color: rgba(0, 0, 0, 0.866);
+  width: 100%;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.projetos .projeto .informacoes-projeto {
+  background-color: #1a1a1a;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.projetos .container-projetos .projeto:hover .informacoes-projeto {
+  opacity: 0.7;
+  background-color: black;
+  padding: 20px;
+}
+
+.projetos .btn-mostrar-projetos {
+  background: none;
+  border: 2px solid white;
+  border-radius: 15px;
+  color: white;
+  width: 130px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.projetos .btn-mostrar-projetos:hover {
+  background-color: rgb(64, 1, 106);
+  transition: 0.3s;
+}
+
+.projetos .btn-mostrar-projetos.remover {
+  display: none;
+}
